@@ -9,7 +9,19 @@ export default class SimpleComponent extends React.Component {
     }
   }
 
+  handleClick = () => {
+    switch (this.state.mood) {
+      case "happy":
+        this.setState({mood: 'sad'})
+        break;
+      case "sad":
+        this.setState({mood: 'happy'})
+        break;
+    }
+    this.state.mood === 'happy' ? setState()
+  }
+
   render(){
-    return <div>SimpleComponent is {this.state.mood}</div>
+    return <div onClick={this.handleClick}>SimpleComponent is {this.state.mood}</div>
   }
 }
