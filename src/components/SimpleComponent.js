@@ -18,7 +18,6 @@ export default class SimpleComponent extends React.Component {
         this.setState({mood: 'happy'})
         break;
     }
-    this.state.mood === 'happy' ? setState()
   }
 
   render(){
