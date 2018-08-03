@@ -10,6 +10,6 @@ export default class SimpleComponent extends React.Component {
   }
 
   render(){
-    return
+    return <div></div>
   }
 }
